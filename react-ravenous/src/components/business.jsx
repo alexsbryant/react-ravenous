@@ -1,30 +1,29 @@
-import React from 'react';
+import React, { Component } from 'react'
 
-function Business() {
-    const sampleBusiness = {
-        image: 'https://content.codecademy.com/programs/react/ravenous/pizza.jpg',
-        name: 'Pizzaria Leopold',
-        address: '2727 Wadsworth Blvd',
-        city: 'Denver',
-        state: 'CO',
-        zip: '80223',
-        category: 'Italian',
-        rating: 4.6,
-        reviewCount: 90
+class Business extends React.Component {
+    render(){
+        return (
+            <div className="Business">
+                <div className="image-container">
+                   <img src={this.props.business.image} />
+                </div>
+                <h2>{this.props.business.name}</h2>
+                <div className="business-information">
+                    <div className="business-address">
+                        <p>{this.props.business.address}</p>
+                        <p>{this.props.business.city}</p>
+                        <p>{this.props.business.state}</p>
+                        <p>{this.props.business.zip}</p>
+                    </div>
+                    <div className="business-rating">
+                        <p>{this.props.business.category}</p>
+                        <p>{this.props.business.rating}</p>
+                        <p>{this.props.business.reviewCount}</p>
+                    </div>
+                </div>
+            </div>
+        )
     }
-  return (
-    <div>
-        <img src={sampleBusiness.image} />
-        <h3>{sampleBusiness.name}</h3>
-        <p>{sampleBusiness.address}</p>
-        <p>{sampleBusiness.city}</p>
-        <p>{sampleBusiness.state}</p>
-        <p>{sampleBusiness.zip}</p>
-        <p>{sampleBusiness.category}</p>
-        <p>{sampleBusiness.rating}</p>
-        <p>{sampleBusiness.reviewCount}</p>
-    </div>
-  )
 }
 
 export default Business;    
