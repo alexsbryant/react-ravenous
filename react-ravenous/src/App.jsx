@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import Business from './components/Business';
+import Business from './components/Business/Business';
 
 const sampleBusiness = {
   image: 'https://content.codecademy.com/programs/react/ravenous/pizza.jpg',
