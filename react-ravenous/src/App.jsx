@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import Business from './components/business';
 
 function App() {
 
@@ -7,6 +8,7 @@ function App() {
     <>
      <h1>Testing screen</h1>
      <p>This is just a test.</p>
+     <Business />
     </>
   )
 }
