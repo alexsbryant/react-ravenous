@@ -1,25 +1,16 @@
 import { useState } from 'react'
 import './App.css'
 import Business from './components/Business/Business';
+import BusinessList from './components/BusinessList/BusinessList';
 
-const sampleBusiness = {
-  image: 'https://content.codecademy.com/programs/react/ravenous/pizza.jpg',
-  name: 'Pizzaria Leopold',
-  address: '2727 Wadsworth Blvd',
-  city: 'Denver',
-  state: 'CO',
-  zip: '80223',
-  category: 'Italian',
-  rating: 4.6,
-  reviewCount: 90
-};
 
 function App() {
 
   return (
     <>
-     <h1>Testing screen</h1>
-     <p>This is just a test.</p>
+     <h1>Ravenoius Test Page</h1>
+     <p>This is just a tasty test.</p>
+     <BusinessList />
     </>
   )
 }
