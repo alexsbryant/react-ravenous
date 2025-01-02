@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
+import React from 'react'
 import styles from "./Business.module.css";
 
-const business = {
+/* const business = {
     imageSrc: 'https://content.codecademy.com/programs/react/ravenous/pizza.jpg',
     name: 'Pizzaria Luigi',
     address: '2727 Wadsworth Blvd',
@@ -11,10 +11,9 @@ const business = {
     category: 'Italian',
     rating: 4.6,
     reviewCount: 90
-  };
+  }; */
 
-class Business extends Component {
-    render() {
+const Business = ({ business }) => {
         return (
             <div className={styles.Business}>
                 <div className={styles.ImageContainer}>
@@ -34,8 +33,8 @@ class Business extends Component {
                     </div>
                 </div>
             </div>
-        )
-    }
-}
+        );
+    };
+
 
 export default Business;    
