@@ -1,18 +1,6 @@
 import React from 'react'
 import styles from "./Business.module.css";
 
-/* const business = {
-    imageSrc: 'https://content.codecademy.com/programs/react/ravenous/pizza.jpg',
-    name: 'Pizzaria Luigi',
-    address: '2727 Wadsworth Blvd',
-    city: 'Denver',
-    state: 'CO',
-    zip: '80223',
-    category: 'Italian',
-    rating: 4.6,
-    reviewCount: 90
-  }; */
-
 const Business = ({ business }) => {
         return (
             <div className={styles.Business}>
