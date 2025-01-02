@@ -1,10 +1,13 @@
 import React, {useState} from 'react';
+import styles from './SearchBar.module.css';
 
 const sortByOptions = {
   "Best Match": "best_match",
   "Highest Rated": "rating",
   "Most Reviewed": "review_count"
 };
+
+// sort_by on Yelp API
 
 const SearchBar = () => {
   const renderSortByOptions = () => {
@@ -17,11 +20,11 @@ const SearchBar = () => {
 
 
   return (
-    <div className='SearchBar'>
-      <div className='SearchBarSortOptions'>
+    <div className={styles.SearchBar}>
+      <div className={styles.SearchBarSortOptions}>
         <ul>{renderSortByOptions()}</ul>
       </div>
-      <div className='SearchBarFields'>
+      <div className={styles.SearchBarFields}>
         <input
           type="text"
           placeholder="Search Businesses"
@@ -30,10 +33,10 @@ const SearchBar = () => {
         />
         <input 
           type="text"
-          placeHolder="Where?"
+          placeholder="Where?"
         />
       </div>
-      <div className="SearchBarSubmit">
+      <div className={styles.SearchBarSubmit}>
         <a>Let's Go!</a>
       </div>
     </div>

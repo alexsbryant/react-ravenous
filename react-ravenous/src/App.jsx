@@ -9,12 +9,11 @@ function App() {
 
   return (
     <div className={styles.App}>
-     <h1>Ravenoius Test Page</h1>
-     <p>This is just a tasty test.</p>
+     <h1>Ravenous</h1>
      <SearchBar />
      <BusinessList />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
