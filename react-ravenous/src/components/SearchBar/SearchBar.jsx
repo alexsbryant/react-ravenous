@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-const sortByOptions= {
+const sortByOptions = {
   "Best Match": "best_match",
   "Highest Rated": "rating",
   "Most Reviewed": "review_count"
@@ -37,21 +37,7 @@ const SearchBar = () => {
         <a>Let's Go!</a>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default SearchBar;
-
-/*      
-        Ideas for how this could work:
-        - Current event onChange state
-        - Compare state with results from BusinessList doc
-        - Format the search bar from the 'form' jsx?
-
-*/
-
-  /*const handleSearch = (e) => {
-    setSearchTerm(e.target.value);
-    onSearch(e.target.value); // call onSearch with updated value
-
-  }*/
