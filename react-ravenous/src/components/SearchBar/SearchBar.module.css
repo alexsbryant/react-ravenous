@@ -5,7 +5,8 @@
     background-image: url("./background_search_desktop.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 15rem;
+    height: auto;
+    max-width: 100%;
 }
 
 .SearchBarSortOptions ul {
