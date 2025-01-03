@@ -31,11 +31,14 @@ const businessTwo = {
 
 
 function App() {
-
+  const searchYelp = (searchTerm, location, sorting) => {
+    console.log(`Searching Yelp with ${searchTerm}, ${location}, ${sorting}.`);
+  };
+  
   return (
     <div className={styles.App}>
-     <h1>Ravenous</h1>
-     <SearchBar />
+     <h1>ravenous</h1>
+     <SearchBar searchYelp={searchYelp} />
      <BusinessList businesses={businesses} />
     </div>
   );
