@@ -14,15 +14,11 @@
     justify-content: center;
     overflow: hidden;
     background: #000;
+    border-radius: 10px;
 }
 
 .ImageContainer img {
     width: 100%;
-}
-
-.BusinessInformation {
-    display: flex;
-    justify-content: space-between;
 }
 
 .Business h2 {
@@ -31,6 +27,11 @@
     font-size: larger;
     font-weight: 600;
     text-align: left;
+}
+
+.BusinessInformation {
+    display: flex;
+    justify-content: space-between;
 }
 
 .BusinessInformation p {
